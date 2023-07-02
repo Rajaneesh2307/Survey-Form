@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/SurveyForm.css" type="text/css">
+    <title>Survey Form</title>
+</head>
+<body style="background-color: lightslategrey;">
+
+    <h1 id="Headstyling">Survey Form</h1>
+
+    <form method="get" id="FormStyling"> 
+        <div>
+            <label style="font-size: 18px;"><b>Name:</b></label><br>
+            <input class="Inputstyling" type="text" name="Enter Full Name" placeholder="Enter Full Name" required>
+        </div>
+
+        <div>
+            <label style="font-size: 18px;"><b>Email:</b></label><br>
+            <input class="Inputstyling" type="email" name="Enter Your Email" placeholder="Enter your Email" required>
+        </div>
+
+        <div>
+            <label style="font-size: 18px;"><b>Age:</b></label><br>
+            <input class="Inputstyling" type="number" name="Enter Your Age" placeholder="Enter Your Age" required>
+        </div>
+
+        <div>
+            <label style="font-size: 18px;"><b>Mobile No:</b></label><br>
+            <input class="Inputstyling" type="number" name="Enter Mobile Number" placeholder="Enter Mobile Number" required>
+        </div>
+
+        <div>
+            <label style="font-size: 18px;"><b>Which Option Best Describes You?</b></label><br>
+            <select style="width: 98%; padding: 8px; border-radius: 6px; border: 1px solid black; margin-bottom: 12px;" name="Describes You">
+                <option value="Student">Student</option>
+                <option value="Intern">Intern</option>
+                <option value="Professional">Professional</option>
+                <option value="Others">Others</option>
+            </select>
+        </div>
+
+        <div style="margin-bottom: 12px;">
+            <label style="font-size: 18px;"><b>Would You Reccomend Your Friend To Take This Survey?</b></label><br>
+            <input type="radio" name="Yes">Yes <br>
+            <input type="radio" name="No">No
+        </div>
+
+        <div style="margin-bottom: 12px;">
+            <label style="font-size: 18px;"><b>Languages and FrameWorks Known (Choose Your Options)</b></label> <br>
+            <input type="checkbox" name="C">C <br>
+            <input type="checkbox" name="C++">C++ <br>
+            <input type="checkbox" name="C#">C# <br>
+            <input type="checkbox" name="Java">Java <br>
+            <input type="checkbox" name="Python">Python <br>
+            <input type="checkbox" name="JavaScript">JavaScript <br>
+            <input type="checkbox" name="Angular">Angular <br>
+            <input type="checkbox" name="React">React <br>
+        </div>
+
+        <div>
+            <label style="font-size: 18px;"><b>Your Comments or Suggestions</b></label> <br>
+            <textarea class="Inputstyling" name="Comments" cols="30" rows="4"></textarea>
+        </div>
+
+        <div>
+            <button id="Buttonstyling" class="Inputstyling">Submit</button>
+        </div>
+    </form>
+    
+</body>
+</html>
